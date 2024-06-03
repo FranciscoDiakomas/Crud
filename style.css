@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
+}
+#aviso{
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(23, 92, 92, 0.989);
+    width: 450px;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    font-size: 14pt;
+    height: 420px;
+    border-radius: 10px;
+    padding: 30px;
+    display: none;
+    margin-top: 100px;
+    margin-top: -410px;
+}
+
+#aviso ol{
+    line-height: 30px;
+    margin-left: 40px;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    height: 40px;
+    background-color: rgba(55, 55, 55, 0.689);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+section form{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    background-color: darkcyan;
+    border-radius: 10px;
+    color: white;
+    gap: 10px;
+    height: auto;
+    padding: 40px;
+    margin-left: 50px;
+}
+.proces{
+    height: 70px;
+    width: 70px;
+    display: none;
+    border-radius: 50%;
+    border: solid 7px darkcyan;
+    margin-top: 40px;
+    animation: girar 1s infinite .4s linear;
+    margin-left: 50px;
+    transition: all ease .2s;
+}
+.filho{
+    background-color:white;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin-left: -10px;
+    transform: rotate(30deg);
+    overflow: hidden;
+}
+@keyframes girar {
+    from{
+        transform: rotate(360deg);
+    }
+    
+}
+.response{
+    min-height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 143, 28, 0.484);
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18pt;
+    width: 500px;
+}
+h1{
+    font-size: 22pt;
+}
+input{
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 12pt;
+
+}
+input:invalid{
+    animation: shake .1s  1s 3;
+}
+@keyframes shake {
+    from{
+        transform: translateX(-10px);
+    }to{
+        transform: translateX(10px);
+    }
+}
+label{
+    font-size: 16pt;
+    text-align: left;
+    width: 95%;
+
+}
+button{
+    width: 150px;
+    height: 30px;
+    border: transparent;
+    font-size: 12pt;
+    border-radius: 4px;
+    color: darkcyan;
+    transition: all ease .2s;
+
+}
+button:active{
+    transform: translateY(5px);
+}
+.user{
+    width: 900px;
+    height: 70px;
+    background-color: rgba(245, 209, 158, 0.741);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    box-shadow:  4px 4px 8px rgba(147, 147, 147, 0.433);
+    border-radius: 5px;
+}
+#listar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav button{
+    background-color: rgb(17, 142, 17);
+    color: rgba(255, 255, 255, 0.992);
+}
+span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    font-size: 14pt;
+    color: rgba(255, 10, 10, 0.599);
+    font-size: 18pt;
+}
+p{
+    font-size: 14pt;
+    color: black;
+}
